@@ -16,7 +16,7 @@ module Mitake
       #
       # @since 0.1.0
       def amount
-        execute&.first&.amount
+        execute && execute.first && execute.first.amount
       end
     end
 
